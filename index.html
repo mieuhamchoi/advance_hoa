@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+</head>
+<style>
+    body {
+        width: 50%;
+        align-items: center;
+        margin: auto;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        background: hsl(180, 86%, 39%);
+
+
+    }
+
+    h3 {
+        margin-left: 180px;
+
+    }
+
+    .play {
+        margin-left: 20px;
+    }
+
+    input {
+        margin-left: 35px;
+        width: 65%;
+        height: 5vh;
+        margin-top: 20px;
+        border: none;
+
+    }
+
+    button {
+        width: 25%;
+        border: none;
+        height: 5vh;
+
+    }
+
+    .create {
+        background: hsl(180, 86%, 39%);
+        height: 10vh;
+        align-items: center;
+    }
+
+    .button {
+        width: 200px;
+        display: flex;
+        margin-left: 40px;
+        background-color: white;
+    }
+
+    p {
+        margin: 0 20px;
+        width: 20px;
+    }
+
+    .name {
+        width: 400px;
+        margin-left: 40px;
+
+    }
+
+    .delete {
+        width: 40px;
+        background-color: white;
+        color: red;
+    }
+
+    button {
+        background-color: rgb(81, 215, 79);
+    }
+
+    .fa-crown {
+        color: gold;
+    }
+
+  
+</style>
+
+<body>
+    <div class="title">
+        <div class="play">
+            <div id="players">Players:</div>
+            <div id="points">Total Points:</div>
+        </div>
+        <div>
+            <h3>Bảng điểm </h3>
+        </div>
+    </div>
+    <table id="table">
+        <tr>
+
+        </tr>
+    </table>
+    <div class="create">
+        <input type="text" placeholder="Enter a player's name" id="input">
+        <button onclick="addNewPlay()">ADD PLAYER</button>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
